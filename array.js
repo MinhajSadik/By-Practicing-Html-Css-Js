@@ -30,7 +30,7 @@ const actors = [
     }
 ];
 
-for Loop
+// for Loop
 for (let i = 0; i < 1; i++) {
     actors[0].payment = actors[0].payment - 10;
     actors[1].payment = actors[1].payment - 20;
@@ -39,7 +39,7 @@ for (let i = 0; i < 1; i++) {
 console.log(actors)
 
 
-forEach Loop
+// forEach Loop
 
 actors.forEach((actor) => {
     actor.payment = actor.payment - 10;
@@ -49,7 +49,7 @@ console.log(actors)
 
 
 
-forOf Loop
+// forOf Loop
 
 for (const actor of actors) {
     actor.payment = actor.payment - 10;
@@ -59,7 +59,7 @@ for (const actor of actors) {
 console.log(actors)
 
 
-filter Loop
+// filter Loop
 
 const students = [
     {
@@ -123,7 +123,7 @@ const movies = [
     
 ];
 
-forEach to check difference between reduce
+// forEach to check difference between reduce
 
 let total = 0;
 movies.forEach((movie)=> {
@@ -131,7 +131,7 @@ movies.forEach((movie)=> {
 })
 
 
-reduce loop 
+// reduce loop 
 
 const total = movies.reduce((acc, movie)=> {
     acc += movie.budget;
