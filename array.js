@@ -161,20 +161,20 @@
 const actors = [
     {
         name: 'actor 1',
-        payment: '100'
+        payment: 100
     },
     {
         name: 'actor 2',
-        payment: '200'
+        payment: 200
     },
     {
         name: 'actor 3',
-        payment: '300'
+        payment: 300
     }
 
 ]
 
-// // for
+// // for Loop
 // for (let i = 0; i < actors.length; i++) {
 //     actors[i].payment = actors[i].payment -1;
 //     // console.log(actors)
@@ -182,8 +182,49 @@ const actors = [
 // console.log(actors)
 
 
-// forEach 
-actors.forEach(actor => {
-    actor.payment = actor.paymment -1;
-})
-console.log(actor)
+// // forEach Loop
+// actors.forEach(actor => {
+//     actor.payment = actor.paymment -1;
+// })
+// console.log(actor)
+
+// // forOf loop
+// for(let actor of actors) {
+//     actor.payment = actor.payment -10;
+//     // console.log(actor);
+// }
+
+
+// // filter Loop
+// const students = [
+//     {
+//         name: 'student 1',
+//         marks: 35
+//     },
+//     {
+//         name: 'student 2',
+//         marks: 52
+//     },
+//     {
+//         name: 'student 3',
+//         marks: 300
+//     }
+// ]
+
+// const total = actors.filter((actor) =>  actor.payment < 300 )
+
+// console.log(total)
+
+
+
+// // map Loop
+
+const finalUser = actors.map((user) => {
+    return {
+        fullName: `${user.name} ${user.payment}`,
+    }
+});
+
+console.log(finalUser) 
+
+
