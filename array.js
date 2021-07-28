@@ -219,12 +219,12 @@ const actors = [
 
 // // map Loop
 
-const finalUser = actors.map((user) => {
-    return {
-        fullName: `${user.name} ${user.payment}`,
-    }
-});
+// const finalUser = actors.map((user) => {
+//     return {
+//         fullName: `${user.name} ${user.payment}`,
+//     }
+// });
 
-console.log(finalUser) 
+// console.log(finalUser) 
 
 
