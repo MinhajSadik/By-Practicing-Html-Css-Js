@@ -80,11 +80,12 @@ console.log(Number(strr))
 console.log(Number.parseInt(strr))
 console.log(num.toString())
 
-console.log(Number(Infinity))
-console.log(String(Infinity))
-console.log(Boolean(Infinity));
-console.log(Boolean(-Infinity));
-
+console.log(Number(Infinity))// false
+console.log(String(Infinity))// true
+console.log(Boolean(Infinity));// true
+console.log(Boolean(-Infinity));// true
+const x = true;// string
+console.log(x.toString());
 
 
 //**Falsy Values**//
