@@ -26,7 +26,7 @@ Array
 Object
 Function
 
-//**Number**/
+//**Number**//
 var n = 1431
 var f = 3.24
 var nn = Number('34.23')
@@ -39,7 +39,7 @@ console.log(Number.MAX_VALUE)
 console.log(Number.MIN_SAFE_INTEGER)
 
 
-//**String**/
+//**String**//
 // first 3 which is direct value is set it's called string literal
 
 const str = 'String';
@@ -52,7 +52,7 @@ const str4 = String(232)
 const str5 = String(3.23)
 
 
-//**Boolean**/
+//**Boolean**//
 
 const b = true;
 const b1 = false;
@@ -62,5 +62,9 @@ const b3 = Boolean(false)
 
 
 
+//**Null vs Undefiend**//
 
+var abc;
+const xyz = null;
 
+console.log(abc, xyz)
