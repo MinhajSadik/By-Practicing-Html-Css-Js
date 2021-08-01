@@ -64,7 +64,7 @@ const b3 = Boolean(false)
 
 //**Null vs Undefiend**//
 
-var abc;
-const xyz = null;
+var abc; // undefiend-> a variable without value always store undefiend
+const xyz = null; // Null-> a variable with unknown value can store Null
 
 console.log(abc, xyz)
