@@ -10,8 +10,7 @@ console.log(name, age);
 
 
 // datatypes
-
-// premitive datatypes
+// premitive datatypes //
 Number
 String
 Boolean
@@ -21,11 +20,13 @@ Infinity //1/0
 NaN //'abc' * 10
 
 
-// object
+// object datatypes //
 Array
 Object
 Function
 
+
+//Primitive DataTypes Reference//
 //**Number**//
 var n = 1431
 var f = 3.24
@@ -96,3 +97,11 @@ null
 undefined
 NaN
 console.log(Boolean(false), Boolean(''));
+
+//**Hexadecimal && Octal Number**//
+
+const hex = 0Xff; //255
+
+const oct = 0323; //211
+
+console.log(hex, oct);
