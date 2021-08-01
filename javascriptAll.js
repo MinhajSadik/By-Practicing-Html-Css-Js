@@ -40,8 +40,8 @@ console.log(Number.MIN_SAFE_INTEGER)
 
 
 //**String**/
-
 // first 3 which is direct value is set it's called string literal
+
 const str = 'String';
 const str1 = "String"
 const str2 = `String`
@@ -50,6 +50,15 @@ const str2 = `String`
 const str3 = String('amaar')
 const str4 = String(232)
 const str5 = String(3.23)
+
+
+//**Boolean**/
+
+const b = true;
+const b1 = false;
+
+const b2 = Boolean(true)
+const b3 = Boolean(false)
 
 
 
