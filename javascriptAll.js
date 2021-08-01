@@ -68,3 +68,30 @@ var abc; // undefiend-> a variable without value always store undefiend
 const xyz = null; // Null-> a variable with unknown value can store Null
 
 console.log(abc, xyz)
+
+
+
+//**Type Conversion**//
+
+const strr = '100'
+const num = 10;
+
+console.log(Number(strr))
+console.log(Number.parseInt(strr))
+console.log(num.toString())
+
+console.log(Number(Infinity))
+console.log(String(Infinity))
+console.log(Boolean(Infinity));
+console.log(Boolean(-Infinity));
+
+
+
+//**Falsy Values**//
+false
+''
+0
+null
+undefined
+NaN
+console.log(Boolean(false), Boolean(''));
