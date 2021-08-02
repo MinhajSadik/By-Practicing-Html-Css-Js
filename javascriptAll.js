@@ -105,3 +105,39 @@ const hex = 0Xff; //255
 const oct = 0323; //211
 
 console.log(hex, oct);
+
+
+// Operators //
+//** Arithmetic Operators*//
+
+// var c = 10;
+// var d = 20;
+
+// console.log(c % d);
+
+// //** Incremental **//
+// //Pre-Incremental -> // Post-Incremental
+
+// console.log(++c); // first increment && last time do .log
+// console.log(d++); // first .log && last time increment
+
+
+//** Assignment Operators */
+var c = 10;
+
+var d = 20;
+
+c += d;
+console.log(c);
+
+c -= d;
+console.log(c);
+
+c *= d;
+console.log(c);
+
+c /= d;
+console.log(c);
+
+c %= d;
+console.log(c);
