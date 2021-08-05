@@ -151,3 +151,28 @@ console.log( a == b); false
 
 console.log( a != b); true
 
+
+
+//Statements
+// all of line code are statements
+console.log('hello world');
+
+var str = 'String'
+
+var num = 10 + (30 / 5) * 5
+
+var a = 10
+var b = 20
+
+var c = a >= b
+
+
+// JavaScript Math
+// console.log(Math.E);
+// console.log(Math.PI);
+
+const n = 4.823
+console.log(Math.abs(n));
+console.log(Math.floor(n));
+console.log(Math.ceil(n));
+console.log(Math.round(n));
