@@ -143,7 +143,7 @@ c %= d;
 console.log(c);
 
 
-// Comparison Operators
+/*Comparison Operators*/
 var a = 10;
 var b = 20;
 
@@ -153,7 +153,7 @@ console.log( a != b); true
 
 
 
-//Statements
+/*Statements*/
 // all of line code are statements
 console.log('hello world');
 
@@ -167,7 +167,7 @@ var b = 20
 var c = a >= b
 
 
-// JavaScript Math
+/*JavaScript Math*/
 console.log(Math.E);
 console.log(Math.PI);
 
@@ -190,3 +190,37 @@ console.log(Math.sqrt(64));
 
 //Genarate random number in under 50
 console.log(Math.round(Math.random() * 50));
+
+
+/*date*/
+
+var date = new Date()
+console.log(date);// 2021-08-05T20:35:14.026Z
+
+console.log(date.toDateString());// Fri Aug 06 2021
+
+console.log(date.toDateString());// Fri Aug 06 2021
+
+console.log(date.toLocaleString());// 06/08/2021, 02:35:14
+
+
+console.log(date.getDate());// 6
+
+console.log(date.getMonth());// 7
+
+console.log(date.getFullYear());// 2021
+
+
+console.log(date.getHours());// 2
+
+console.log(date.getMinutes());// 35
+
+console.log(date.getSeconds());// 14
+
+console.log(date.getMilliseconds());// 491
+
+
+
+
+
+
