@@ -283,3 +283,57 @@
 // }else{
 //     console.log(`${n} is odd number`)
 // }
+
+
+/* Switch Case */
+
+//trying to if else 
+
+var date = new Date()
+
+var today = date.getDay()
+// console.log(today);
+
+// // if '0' return it's sunDay and if '1' return monDay and continue
+// if(today === 0){
+//     console.log('today is sunDay');
+// }else if(today === 1){
+//     console.log('today is monDay');
+// }else if(today === 2){
+//     console.log('today is TuesDay');
+// }else if(today === 3){
+//     console.log('today is WednesDay');
+// }else if(today === 4){
+//     console.log('today is ThusDay');
+// }else if(today === 5){
+//     console.log('today is FriDay');
+// }else{
+//     console.log('today is SaturDay');
+// }
+
+
+switch(8){
+    case 0:
+        console.log('today is SunDay');
+        break
+    case 1:
+        console.log('today is MonDay');
+        break
+    case 2:
+        console.log('today is TuesDay');
+        break
+    case 3:
+        console.log('today is WednesDay');
+        break
+    case 4:
+        console.log('today is ThusDay');
+        break
+    case 5:
+        console.log('today is Friday');
+        break
+    case 6:
+        console.log('today is SaturDay');
+        break
+    default: 
+        console.log('Not this Valid');
+}
