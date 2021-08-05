@@ -172,7 +172,7 @@ console.log(Math.E);
 console.log(Math.PI);
 
 
-const n2 = 4.389
+var n2 = 4.389
 console.log(Math.abs(n));
 console.log(Math.floor(n));
 console.log(Math.ceil(n));
@@ -221,6 +221,44 @@ console.log(date.getMilliseconds());// 491
 
 
 
+/* Conditional Operators */
+// if
+var a = 100
+var b = 200
 
+if(a > b){
+    console.log('A is greter than B')
+}
 
+if (a < b) {
+    console.log('B is greter than A');
+}
+
+var n = 50
+
+if(n % 2 === 0){
+    console.log('জোড় সংখ্যা');
+}
+if (n % 2 === 1) {
+    console.log('বিজোড় সংখ্যা');
+}
+
+// else
+
+var a = 100
+var b = 200
+
+if(a > b){
+    console.log('A is greter than B')
+}else {
+    console.log('B is greter than A');
+}
+
+var n = 51
+
+if(n % 2 === 0){
+    console.log(`${n} even number, জোড় সংখ্যা`);
+}else {
+    console.log(`${n} odd number, বিজোড় সংখ্যা`);
+}
 
