@@ -1,178 +1,192 @@
-// //javascript all you need to know//
-// //practice in javascript//
+//javascript all you need to know//
+//practice in javascript//
 
-// console.log('minhaj ' + 'ahmed' + ' age is ' + 24)
+console.log('minhaj ' + 'ahmed' + ' age is ' + 24)
 
-// var name = 'minhaj';
-// var age = 24;
+var name = 'minhaj';
+var age = 24;
 
-// console.log(name, age);
-
-
-// // datatypes
-// // premitive datatypes //
-// Number
-// String
-// Boolean
-// null
-// undefined
-// Infinity //1/0
-// NaN //'abc' * 10
+console.log(name, age);
 
 
-// // object datatypes //
-// Array
-// Object
-// Function
+// datatypes
+// premitive datatypes //
+Number
+String
+Boolean
+null
+undefined
+Infinity //1/0
+NaN //'abc' * 10
 
 
-// //Primitive DataTypes Reference//
-// //**Number**//
-// var n = 1431
-// var f = 3.24
-// var nn = Number('34.23')
-// // console.log(nn)
-
-// console.log(Number.parseInt(nn))
-
-// console.log(Number.MAX_SAFE_INTEGER)
-// console.log(Number.MAX_VALUE)
-// console.log(Number.MIN_SAFE_INTEGER)
+// object datatypes //
+Array
+Object
+Function
 
 
-// //**String**//
-// // first 3 which is direct value is set it's called string literal
+//Primitive DataTypes Reference//
+//**Number**//
+var n = 1431
+var f = 3.24
+var nn = Number('34.23')
+// console.log(nn)
 
-// var str = 'String';
-// var str1 = "String"
-// var str2 = `String`
+console.log(Number.parseInt(nn))
 
-
-// var str3 = String('amaar')
-// var str4 = String(232)
-// var str5 = String(3.23)
-
-
-// //**Boolean**//
-
-// var b = true;
-// var b1 = false;
-
-// var b2 = Boolean(true)
-// var b3 = Boolean(false)
+console.log(Number.MAX_SAFE_INTEGER)
+console.log(Number.MAX_VALUE)
+console.log(Number.MIN_SAFE_INTEGER)
 
 
+//**String**//
+// first 3 which is direct value is set it's called string literal
 
-// //**Null vs Undefiend**//
+var str = 'String';
+var str1 = "String"
+var str2 = `String`
 
-// var abc; // undefiend-> a variable without value always store undefiend
-// var xyz = null; // Null-> a variable with unknown value can store Null
 
-// console.log(abc, xyz)
+var str3 = String('amaar')
+var str4 = String(232)
+var str5 = String(3.23)
+
+
+//**Boolean**//
+
+var b = true;
+var b1 = false;
+
+var b2 = Boolean(true)
+var b3 = Boolean(false)
 
 
 
-// //**Type Conversion**//
+//**Null vs Undefiend**//
 
-// var strr = '100'
-// var num = 10;
+var abc; // undefiend-> a variable without value always store undefiend
+var xyz = null; // Null-> a variable with unknown value can store Null
 
-// console.log(Number(strr))
-// console.log(Number.parseInt(strr))
-// console.log(num.toString())
-
-// console.log(Number(Infinity))// false
-// console.log(String(Infinity))// true
-// console.log(Boolean(Infinity));// true
-// console.log(Boolean(-Infinity));// true
-// var x = true;// string
-// console.log(x.toString());
+console.log(abc, xyz)
 
 
-// //**Falsy Values**//
-// false
-// ''
-// 0
-// null
-// undefined
-// NaN
-// console.log(Boolean(false), Boolean(''));
 
-// //**Hexadecimal && Octal Number**//
+//**Type Conversion**//
 
-// var hex = 0Xff; //255
+var strr = '100'
+var num = 10;
 
-// var oct = 0323; //211
+console.log(Number(strr))
+console.log(Number.parseInt(strr))
+console.log(num.toString())
 
-// console.log(hex, oct);
-
-
-// // Operators //
-// //** Arithmetic Operators*//
-
-// // var c = 10;
-// // var d = 20;
-
-// // console.log(c % d);
-
-// // //** Incremental **//
-// // //Pre-Incremental -> // Post-Incremental
-
-// // console.log(++c); // first increment && last time do .log
-// // console.log(d++); // first .log && last time increment
+console.log(Number(Infinity))// false
+console.log(String(Infinity))// true
+console.log(Boolean(Infinity));// true
+console.log(Boolean(-Infinity));// true
+var x = true;// string
+console.log(x.toString());
 
 
-// //** Assignment Operators */
+//**Falsy Values**//
+false
+''
+0
+null
+undefined
+NaN
+console.log(Boolean(false), Boolean(''));
+
+//**Hexadecimal && Octal Number**//
+
+var hex = 0Xff; //255
+
+var oct = 0323; //211
+
+console.log(hex, oct);
+
+
+// Operators //
+//** Arithmetic Operators*//
+
 // var c = 10;
-
 // var d = 20;
 
-// c += d;
-// console.log(c);
+// console.log(c % d);
 
-// c -= d;
-// console.log(c);
+// //** Incremental **//
+// //Pre-Incremental -> // Post-Incremental
 
-// c *= d;
-// console.log(c);
-
-// c /= d;
-// console.log(c);
-
-// c %= d;
-// console.log(c);
+// console.log(++c); // first increment && last time do .log
+// console.log(d++); // first .log && last time increment
 
 
-// // Comparison Operators
-// var a = 10;
-// var b = 20;
+//** Assignment Operators */
+var c = 10;
 
-// console.log( a == b); false
+var d = 20;
 
-// console.log( a != b); true
+c += d;
+console.log(c);
+
+c -= d;
+console.log(c);
+
+c *= d;
+console.log(c);
+
+c /= d;
+console.log(c);
+
+c %= d;
+console.log(c);
+
+
+// Comparison Operators
+var a = 10;
+var b = 20;
+
+console.log( a == b); false
+
+console.log( a != b); true
 
 
 
-// //Statements
-// // all of line code are statements
-// console.log('hello world');
+//Statements
+// all of line code are statements
+console.log('hello world');
 
-// var str = 'String'
+var str = 'String'
 
-// var num = 10 + (30 / 5) * 5
+var num = 10 + (30 / 5) * 5
 
-// var a = 10
-// var b = 20
+var a = 10
+var b = 20
 
-// var c = a >= b
+var c = a >= b
 
 
 // JavaScript Math
-// console.log(Math.E);
-// console.log(Math.PI);
+console.log(Math.E);
+console.log(Math.PI);
 
-const n = 4.823
+
+const n2 = 4.389
 console.log(Math.abs(n));
 console.log(Math.floor(n));
 console.log(Math.ceil(n));
 console.log(Math.round(n));
+
+//Max or min
+console.log(Math.max(300, 302, 100));
+console.log(Math.min(303, 200, 101));
+
+//Power
+console.log(Math.pow(2, 3));
+console.log(Math.pow(3, 5));
+console.log(Math.sqrt(9));
+console.log(Math.sqrt(64));
+
+//Genarate random number in under 50
+console.log(Math.round(Math.random() * 50));
