@@ -245,20 +245,41 @@
 
 // // else
 
-// var a = 100
-// var b = 200
+// var a = 200
+// var b = 100
 
 // if(a > b){
-//     console.log('A is greter than B')
-// }else {
-//     console.log('B is greter than A');
+//     console.log(`${a} gretter than ${b}`)
+// }else if( a < b) {
+//     console.log(`${a} smaller than ${b}`);
+// }else{
+//     console.log(`${a} both are ${b} same`);
 // }
 
-// var n = 51
+// var n = 5
 
-// if(n % 2 === 0){
+// if(n % 2 === 0 && n !== 1){
 //     console.log(`${n} even number, জোড় সংখ্যা`);
 // }else {
 //     console.log(`${n} odd number, বিজোড় সংখ্যা`);
 // }
 
+/* else if */
+var a = 100
+var b = 200
+
+if(a > b){
+    console.log('A is greter than B')
+}else {
+    console.log('B is greter than A');
+}
+
+var n = 0
+
+if(n === 0){
+    console.log(`${n} is an zero`);
+}else if (n % 2 === 0){
+    console.log(`${n} even number`);
+}else{
+    console.log(`${n} is odd number`)
+}
