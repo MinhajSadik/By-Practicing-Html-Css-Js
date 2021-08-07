@@ -338,3 +338,7 @@ switch(8){
     default: 
         console.log('Not this Valid');
 }
+
+var date = new Date()
+
+var today = date.getDate()
