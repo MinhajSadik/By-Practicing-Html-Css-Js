@@ -342,3 +342,19 @@ switch(8){
 var date = new Date()
 
 var today = date.getDate()
+
+if(today === 0){
+    return console.log('today is sunday')
+}else if(today === 1){
+    return console.log('today is monday');
+}else if(today === 1){
+    return console.log('today is tuesday');
+}else if(today === 1){
+    return console.log('today is wednesday');
+}else if(today === 1){
+    return console.log('today is thusday');
+}else if(today === 1){
+    return console.log('today is friday');
+}else if(today === 1){
+    return console.log('today is saturday');
+}
