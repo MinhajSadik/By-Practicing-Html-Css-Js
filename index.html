@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+    </style>
   </head>
   <body>
-    <!-- <h1>MinhajSadik</h1> -->
-    <h2>MinhajSadik</h2>
-    <svg width="300" height="200">
-      <polygon
-        points="100,10 40,198 190,78 10,78 160,198"
-        style="fill: lime; stroke: purple; stroke-width: 5; fill-rule: evenodd"
-      />
-    </svg>
-
-    <svg viewBox="0 0 200 200" width="300px" height="300px">
+    <svg
+      viewBox="0 0 200 200"
+      width="200px"
+      height="200px"
+      style="border: 1px solid red"
+    >
       <!-- <rect x="50" y="50" width="100" height="100" fill="black"></rect> -->
       <circle cx="100" cy="100" r="70" fill="yellow"></circle>
       <circle cx="65" cy="80" r="10" fill="black"></circle>
@@ -26,10 +29,14 @@
       <!-- <circle cx="110" cy="178" r="10" fill="black"></circle> -->
       <path d="M90 160 110 160 " stroke="black" stroke-width="10"></path>
       <path
-        d="M80 167 A1, 0.2 0 0,0 120 167"
+        d="M80 167 A1, 0.2 0 1,0 120 167"
         stroke="black"
         stroke-width="10"
       ></path>
+      <!-- head -->
+      <path d="M80 110 90 60" stroke="black" stroke-width="10"></path>
+
+      <!-- mouth -->
       <path
         d="M65 130 A1, 0.4 0 0,0 130 130 "
         stroke="red"
@@ -37,7 +44,14 @@
       ></path>
     </svg>
 
-    <div id="googleMap" style="width: 100%; height: 400px"></div>
+    <svg width="200" height="200" style="border: 1px solid red">
+      <polygon
+        points="100,10 40,198 190,78 10,78 160,198"
+        style="fill: lime; stroke: purple; stroke-width: 5; fill-rule: evenodd"
+      />
+    </svg>
+
+    <!-- <div id="googleMap" style="width: 100%; height: 400px"></div>
 
     <script>
       function myMap() {
@@ -52,7 +66,7 @@
       }
     </script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> -->
 
     <!-- 
     <h2>JavaScript Arrays</h2>
