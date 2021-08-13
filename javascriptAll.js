@@ -381,3 +381,6 @@ if(today === 0){
 }else{
     console.log('today is saturday');
 }
+
+
+document.getElementById('googleMap').innerHTML = "hello world";
