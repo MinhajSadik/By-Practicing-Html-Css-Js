@@ -1,3 +1,15 @@
-.div-cl {
-  color: yellow;
+input:checked {
+  height: 20px;
+  width: 20px;
+}
+h1#heading {
+  color: red;
+}
+/* div,
+h1,
+p {
+  background-color: cornflowerblue;
+} */
+div h1 {
+  background-color: darkblue;
 }
