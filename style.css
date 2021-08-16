@@ -2,7 +2,7 @@ input:checked {
   height: 20px;
   width: 20px;
 }
-input:default {
+input:disabled {
   box-shadow: 0 0 10px 10px blue;
 }
 h1#heading {
