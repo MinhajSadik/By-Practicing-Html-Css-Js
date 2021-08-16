@@ -2,6 +2,9 @@ input:checked {
   height: 20px;
   width: 20px;
 }
+input:default {
+  box-shadow: 0 0 10px 10px blue;
+}
 h1#heading {
   color: red;
 }
