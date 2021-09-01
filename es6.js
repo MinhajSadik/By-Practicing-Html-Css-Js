@@ -20,7 +20,7 @@
 // number = [30, 40, 50, 50]
 // console.log(number);
 
-for (let i = 0; i <= 5; i++){
-    console.log(i);
-}
-// console.log(i);
+// for (let i = 0; i <= 5; i++){
+//     console.log(i);
+// }
+// // console.log(i);
