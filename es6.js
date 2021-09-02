@@ -24,3 +24,17 @@
 //     console.log(i);
 // }
 // // console.log(i);
+
+
+const numbers = [3, 5, 7, 12, 10, 11, 19]
+
+const result = numbers.push(20, 30, 40, 50, 50)
+
+console.log(numbers, result);
+// console.log('result', result);
+
+const log = (anything) => {
+    // console.log(anything);
+}
+
+// log(numbers, result);
