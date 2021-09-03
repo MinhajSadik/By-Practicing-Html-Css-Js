@@ -1,11 +1,16 @@
 {
   "scripts": {
-    "type": "module"
+    "type": "module",
+    "test": "jest --watchAll --coverage"
   },
   "name": "by-practicing-html-css-js",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/MinhajSadik/By-Practicing-Html-Css-Js.git",
   "author": "MinhajSadik <MinhajoSadik@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "jest": "^27.1.0"
+  }
 }
