@@ -3,39 +3,39 @@ const CruzHarrell = require("./data.json");
 const KatherineCohen = CruzHarrell.subordinates[0];
 const RoxanneSimmons = CruzHarrell.subordinates[3];
 
-// // return names of all subordinates of person
-// const example1 = (person) => {
-//   return person.subordinates.map((subordinate) => subordinate.name);
-// };
+// return names of all subordinates of person
+const example1 = (person) => {
+  return person.subordinates.map((subordinate) => subordinate.name);
+};
 
-// test("Example 1: return names of all subordinates of person", () => {
-//   expect(example1(CruzHarrell)).toEqual([
-//     "Katherine Cohen",
-//     "Lucy Patton",
-//     "Moon Terry",
-//     "Roxanne Simmons",
-//     "Long Morales",
-//     "Velazquez Dotson",
-//     "Terri Cantrell",
-//     "Janna Patterson",
-//     "Angelina Walsh",
-//     "Morin Howard",
-//   ]);
-// });
+test("Example 1: return names of all subordinates of person", () => {
+  expect(example1(CruzHarrell)).toEqual([
+    "Katherine Cohen",
+    "Lucy Patton",
+    "Moon Terry",
+    "Roxanne Simmons",
+    "Long Morales",
+    "Velazquez Dotson",
+    "Terri Cantrell",
+    "Janna Patterson",
+    "Angelina Walsh",
+    "Morin Howard",
+  ]);
+});
 
 
-// // // return company name from email address
-// const exercise11 = (email) => {
-//   return (
-//     email.substring(0, email.lastIndexOf("@")),
-//     email.substring(email.lastIndexOf("@") + 1, email.lastIndexOf("."))
-//   )
-// }
+// // return company name from email address
+const exercise11 = (email) => {
+  return (
+    email.substring(0, email.lastIndexOf("@")),
+    email.substring(email.lastIndexOf("@") + 1, email.lastIndexOf("."))
+  )
+}
 
-// test("Exercise 1.1: return company name from email address", () => {
-//   expect(exercise11('katherinecohen@ecraze.com')).toEqual("ecraze");
-//   expect(exercise11('lucypatton@geekwagon.com')).toEqual("geekwagon");
-// });
+test("Exercise 1.1: return company name from email address", () => {
+  expect(exercise11('katherinecohen@ecraze.com')).toEqual("ecraze");
+  expect(exercise11('lucypatton@geekwagon.com')).toEqual("geekwagon");
+});
 
 // // given a person, return a list of companies of her subordinates
 // const exercise12 = (person) => {
