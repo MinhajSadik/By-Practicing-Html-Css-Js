@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "type": "module"
+  },
+  "name": "by-practicing-html-css-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MinhajSadik/By-Practicing-Html-Css-Js.git",
+  "author": "MinhajSadik <MinhajoSadik@gmail.com>",
+  "license": "MIT"
+}
