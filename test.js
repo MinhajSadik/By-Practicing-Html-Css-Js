@@ -26,6 +26,7 @@ test("Example 1: return names of all subordinates of person", () => {
 
 // // return company name from email address
 const exercise11 = (email) => {
+  
 }
 
 test("Exercise 1.1: return company name from email address", () => {
