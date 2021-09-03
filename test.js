@@ -39,12 +39,19 @@ const RoxanneSimmons = CruzHarrell.subordinates[3];
 
 // given a person, return a list of companies of her subordinates
 const exercise12 = (person) => {
+  // return person.subordinates.forEach((company) => {
+  //   if(company.lastIndexOf != undefined) {
+  //     company.substring(0, company.lastIndexOf("@")),
+  //     company.substring(company.lastIndexOf("@") + 1, company.lastIndexOf("."))
+  //   }
+  // })
+
   return person.subordinates.map((company) => {
-    if(company.lastIndexOf !== undefined) {
-      company.substring(0, company.lastIndexOf("@")),
-      company.substring(company.lastIndexOf("@") + 1, company.lastIndexOf("."))
+    if(company.lastIndexOf != undefined) {
+        company.substring(0, company.lastIndexOf("@")),
+        company.substring(company.lastIndexOf("@") + 1, company.lastIndexOf("."))
     }
-  })
+  });
   
 };
 
