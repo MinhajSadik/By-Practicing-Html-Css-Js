@@ -25,34 +25,36 @@ test("Example 1: return names of all subordinates of person", () => {
 
 
 // // return company name from email address
-// const exercise11 = (email) => {
+const exercise11 = (email) => {
+  return email.subordinates.map((email) => {
+    email.substring(email.lastIndexOf("@") +1);
+  })
+}
 
-// }
-
-// test("Exercise 1.1: return company name from email address", () => {
-//   expect(exercise11('katherinecohen@ecraze.com')).toEqual("ecraze");
-//   expect(exercise11('lucypatton@geekwagon.com')).toEqual("geekwagon");
-// });
+test("Exercise 1.1: return company name from email address", () => {
+  expect(exercise11('katherinecohen@ecraze.com')).toEqual("ecraze");
+  expect(exercise11('lucypatton@geekwagon.com')).toEqual("geekwagon");
+});
 
 // given a person, return a list of companies of her subordinates
-const exercise12 = (person) => {
-};
+// const exercise12 = (person) => {
+// };
 
-test("Exercise 1.2: given a person, return a list of companies of her subordinates", () => {
-  expect(exercise12(CruzHarrell)).toEqual([
-    "ecraze",
-    "geekwagon",
-    "isologix",
-    "recognia",
-    "rockabye",
-    "enersave",
-    "letpro",
-    "geologix",
-    "webiotic",
-    "zoarere",
-  ]);
-  expect(exercise12(KatherineCohen)).toEqual([]);
-});
+// test("Exercise 1.2: given a person, return a list of companies of her subordinates", () => {
+//   expect(exercise12(CruzHarrell)).toEqual([
+//     "ecraze",
+//     "geekwagon",
+//     "isologix",
+//     "recognia",
+//     "rockabye",
+//     "enersave",
+//     "letpro",
+//     "geologix",
+//     "webiotic",
+//     "zoarere",
+//   ]);
+//   expect(exercise12(KatherineCohen)).toEqual([]);
+// });
 
 // // given a person and gender, return number of subordinates of person of given gender
 // const example2 = (person, gender) => {
