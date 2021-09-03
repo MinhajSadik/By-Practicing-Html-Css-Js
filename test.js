@@ -37,25 +37,32 @@ const RoxanneSimmons = CruzHarrell.subordinates[3];
 //   expect(exercise11('lucypatton@geekwagon.com')).toEqual("geekwagon");
 // });
 
-// // given a person, return a list of companies of her subordinates
-// const exercise12 = (person) => {
-// };
+// given a person, return a list of companies of her subordinates
+const exercise12 = (person) => {
+  return person.subordinates.map((company) => {
+    if(company.lastIndexOf !== undefined) {
+      company.substring(0, company.lastIndexOf("@")),
+      company.substring(company.lastIndexOf("@") + 1, company.lastIndexOf("."))
+    }
+  })
+  
+};
 
-// test("Exercise 1.2: given a person, return a list of companies of her subordinates", () => {
-//   expect(exercise12(CruzHarrell)).toEqual([
-//     "ecraze",
-//     "geekwagon",
-//     "isologix",
-//     "recognia",
-//     "rockabye",
-//     "enersave",
-//     "letpro",
-//     "geologix",
-//     "webiotic",
-//     "zoarere",
-//   ]);
-//   expect(exercise12(KatherineCohen)).toEqual([]);
-// });
+test("Exercise 1.2: given a person, return a list of companies of her subordinates", () => {
+  expect(exercise12(CruzHarrell)).toEqual([
+    "ecraze",
+    "geekwagon",
+    "isologix",
+    "recognia",
+    "rockabye",
+    "enersave",
+    "letpro",
+    "geologix",
+    "webiotic",
+    "zoarere",
+  ]);
+  expect(exercise12(KatherineCohen)).toEqual([]);
+});
 
 // // given a person and gender, return number of subordinates of person of given gender
 // const example2 = (person, gender) => {
