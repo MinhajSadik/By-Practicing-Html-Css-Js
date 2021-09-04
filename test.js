@@ -70,8 +70,11 @@ const RoxanneSimmons = CruzHarrell.subordinates[3];
 // });
 
 // given a person and [minAge, maxAge], return number of subordinates in that age range
+
 const exercise21 = (person, [minAge, maxAge]) => {
-  return person.subordinates.map((subordinate) => subordinate.age)
+  return person.subordinates.map((subordinate) => subordinate.age >= minAge || subordinate.age <= maxAge
+  )
+
 };
 
 test("Exercise 2.1: given a person and [minAge, maxAge], return number of subordinates in that age range", () => {
