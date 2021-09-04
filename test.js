@@ -37,39 +37,25 @@ const RoxanneSimmons = CruzHarrell.subordinates[3];
 //   expect(exercise11('lucypatton@geekwagon.com')).toEqual("geekwagon");
 // });
 
-// given a person, return a list of companies of her subordinates
-const exercise12 = (person) => {
-  // return person.subordinates.forEach((company) => {
-  //   if(company.lastIndexOf != undefined) {
-  //     company.substring(0, company.lastIndexOf("@")),
-  //     company.substring(company.lastIndexOf("@") + 1, company.lastIndexOf("."))
-  //   }
-  // })
-
-  return person.subordinates.map((company) => {
-    if(company.lastIndexOf != undefined) {
-        company.substring(0, company.lastIndexOf("@")),
-        company.substring(company.lastIndexOf("@") + 1, company.lastIndexOf("."))
-    }
-  });
-  
-};
-
-test("Exercise 1.2: given a person, return a list of companies of her subordinates", () => {
-  expect(exercise12(CruzHarrell)).toEqual([
-    "ecraze",
-    "geekwagon",
-    "isologix",
-    "recognia",
-    "rockabye",
-    "enersave",
-    "letpro",
-    "geologix",
-    "webiotic",
-    "zoarere",
-  ]);
-  expect(exercise12(KatherineCohen)).toEqual([]);
-});
+// // given a person, return a list of companies of her subordinates
+// const exercise12 = (person) => {
+//   return person.subordinates.map((subordinate) => subordinate.email.split("@")[1].split(".")[0])
+// }
+// test("Exercise 1.2: given a person, return a list of companies of her subordinates", () => {
+//   expect(exercise12(CruzHarrell)).toEqual([
+//     "ecraze",
+//     "geekwagon",
+//     "isologix",
+//     "recognia",
+//     "rockabye",
+//     "enersave",
+//     "letpro",
+//     "geologix",
+//     "webiotic",
+//     "zoarere",
+//   ]);
+//   expect(exercise12(KatherineCohen)).toEqual([]);
+// });
 
 // // given a person and gender, return number of subordinates of person of given gender
 // const example2 = (person, gender) => {
@@ -83,13 +69,15 @@ test("Exercise 1.2: given a person, return a list of companies of her subordinat
 //   expect(example2(KatherineCohen, "male")).toEqual(0);
 // });
 
-// // given a person and [minAge, maxAge], return number of subordinates in that age range
-// const exercise21 = (person, [minAge, maxAge]) => {};
+// given a person and [minAge, maxAge], return number of subordinates in that age range
+const exercise21 = (person, [minAge, maxAge]) => {
+  return person.subordinates.map((subordinate) => subordinate.age)
+};
 
-// test("Exercise 2.1: given a person and [minAge, maxAge], return number of subordinates in that age range", () => {
-//   expect(exercise21(CruzHarrell, [21, 49])).toEqual(5);
-//   expect(exercise21(RoxanneSimmons, [55, 65])).toEqual(1);
-// });
+test("Exercise 2.1: given a person and [minAge, maxAge], return number of subordinates in that age range", () => {
+  expect(exercise21(CruzHarrell, [21, 49])).toEqual(5);
+  expect(exercise21(RoxanneSimmons, [55, 65])).toEqual(1);
+});
 
 // // given a person, return the names of subordinates who themselves have subordinates
 // const exercise22 = (person) => {};
