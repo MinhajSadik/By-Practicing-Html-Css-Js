@@ -70,34 +70,34 @@ const RoxanneSimmons = CruzHarrell.subordinates[3];
 // });
 
 // given a person and [minAge, maxAge], return number of subordinates in that age range
-
+ 
 const exercise21 = (person, [minAge, maxAge]) => {
-  return person.subordinates.map((subordinate) => subordinate.age >= minAge || subordinate.age <= maxAge
-  )
-
-};
+  return person.subordinates.map((subordinate) => subordinate.age <= minAge || subordinate.age >= maxAge);
+}
 
 test("Exercise 2.1: given a person and [minAge, maxAge], return number of subordinates in that age range", () => {
   expect(exercise21(CruzHarrell, [21, 49])).toEqual(5);
   expect(exercise21(RoxanneSimmons, [55, 65])).toEqual(1);
 });
 
-// // given a person, return the names of subordinates who themselves have subordinates
-// const exercise22 = (person) => {};
+// given a person, return the names of subordinates who themselves have subordinates
+const exercise22 = (person) => {
+  return person.subordinates.slice(2).forEach((subordinate) => subordinate.name)
+};
 
-// test("Exercise 2.2: given a person, return the names of subordinates who themselves have subordinates", () => {
-//   expect(exercise22(CruzHarrell)).toEqual([
-//     "Moon Terry",
-//     "Roxanne Simmons",
-//     "Long Morales",
-//     "Velazquez Dotson",
-//     "Terri Cantrell",
-//     "Janna Patterson",
-//     "Angelina Walsh",
-//     "Morin Howard",
-//   ]);
-//   expect(exercise22(RoxanneSimmons)).toEqual(["Pat Bryan"]);
-// });
+test("Exercise 2.2: given a person, return the names of subordinates who themselves have subordinates", () => {
+  expect(exercise22(CruzHarrell)).toEqual([
+    "Moon Terry",
+    "Roxanne Simmons",
+    "Long Morales",
+    "Velazquez Dotson",
+    "Terri Cantrell",
+    "Janna Patterson",
+    "Angelina Walsh",
+    "Morin Howard",
+  ]);
+  expect(exercise22(RoxanneSimmons)).toEqual(["Pat Bryan"]);
+});
 
 // // given a person, return total balance of her subordinates
 // const example3 = (person) => {

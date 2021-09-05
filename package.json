@@ -1,7 +1,7 @@
 {
   "scripts": {
     "type": "module",
-    "test": "jest --watchAll --coverage"
+    "test": "jest --watchAll"
   },
   "name": "by-practicing-html-css-js",
   "version": "1.0.0",
