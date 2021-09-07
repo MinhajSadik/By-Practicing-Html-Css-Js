@@ -114,7 +114,7 @@ const RoxanneSimmons = CruzHarrell.subordinates[3];
 
 // given a person, return average age of her subordinates
 const exercise31 = (person) => {
-  return person.subordinates.map((su) => average.age)
+  return person.subordinates.reduce((prev, user) => prev + user.age, 0) / person.subordinates.length;
 };
 
 test("Exercise 3.1: given a person, return average age of her subordinates", () => {
