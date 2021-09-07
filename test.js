@@ -112,24 +112,26 @@ const RoxanneSimmons = CruzHarrell.subordinates[3];
 //   expect(example3(KatherineCohen)).toEqual(0);
 // });
 
-// given a person, return average age of her subordinates
-const exercise31 = (person) => {
-  return person.subordinates.reduce((prev, user) => prev + user.age, 0) / person.subordinates.length;
+// // given a person, return average age of her subordinates
+// const exercise31 = (person) => {
+//   return person.subordinates.reduce((prev, average) => prev + average.age, 0) / person.subordinates.length;
+// };
+
+// test("Exercise 3.1: given a person, return average age of her subordinates", () => {
+//   expect(exercise31(CruzHarrell)).toBeCloseTo(50.2);
+//   expect(exercise31(RoxanneSimmons)).toBeCloseTo(59);
+// });
+
+// given a person, return difference between female and male subordinates
+// e.g: if someone has 4 female subordinates and 7 male subordinates, return -3(=4-7)
+const exercise32 = (person) => {
+  return per
 };
 
-test("Exercise 3.1: given a person, return average age of her subordinates", () => {
-  expect(exercise31(CruzHarrell)).toBeCloseTo(50.2);
-  expect(exercise31(RoxanneSimmons)).toBeCloseTo(59);
+test("Exercise 3.2: given a person, return difference between female and male subordinates", () => {
+  expect(exercise32(CruzHarrell)).toEqual(2);
+  expect(exercise32(RoxanneSimmons)).toEqual(1);
 });
-
-// // given a person, return difference between female and male subordinates
-// // e.g: if someone has 4 female subordinates and 7 male subordinates, return -3(=4-7)
-// const exercise32 = (person) => {};
-
-// test("Exercise 3.2: given a person, return difference between female and male subordinates", () => {
-//   expect(exercise32(CruzHarrell)).toEqual(2);
-//   expect(exercise32(RoxanneSimmons)).toEqual(1);
-// });
 
 // // do the same exercise32, but with using only 1 reduce function and nothing else
 // const exercise32a = (person) => {};
